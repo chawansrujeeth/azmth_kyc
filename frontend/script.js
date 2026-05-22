@@ -2,7 +2,8 @@ const sendBtn = document.getElementById("send-btn");
 const messageInput = document.getElementById("message-input");
 const chatBox = document.getElementById("chat-box");
 const chatForm = document.getElementById("chat-form");
-const API_BASE_URL = window.CHATBOT_API_BASE_URL || "http://127.0.0.1:8000";
+const DEFAULT_API_BASE_URL = "http://127.0.0.1:8000";
+const API_BASE_URL = String(window.CHATBOT_API_BASE_URL || DEFAULT_API_BASE_URL).replace(/\/+$/, "");
 
 function createSessionUserId() {
 
