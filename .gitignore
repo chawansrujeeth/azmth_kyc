@@ -1,0 +1,10 @@
+# Python cache and virtual env
+backend/__pycache__/
+backend/venv/
+
+# Local secrets
+backend/.env
+
+# Local runtime chat/session files
+backend/data/*.json
+!backend/data/.gitkeep
